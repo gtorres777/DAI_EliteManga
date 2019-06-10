@@ -7,6 +7,11 @@ use Jenssegers\Mongodb\Eloquent\Model as Moloquent;
 class Entrega extends Moloquent
 {
     protected $fillable = [
-        'compra_id', 'fecha_entrega'
+        'fecha_entrega'
     ];
+
+    public function compras()
+    {
+        return $this->embedsOne('App\Compra');
+    }
 }
