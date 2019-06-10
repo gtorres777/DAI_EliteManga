@@ -22,6 +22,12 @@ Route::view('/productos','Productos');
 
 Route::view('/compras','Compras');
 
+Route::view('/manga','manga');
+
+Route::view('/seleccion','seleccion');
+
+Route::view('/tienda','tienda');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
