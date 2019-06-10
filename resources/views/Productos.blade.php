@@ -17,7 +17,7 @@
                                     <figure class="fa-play-circle img-fluid"><img src="/images/fondo2.jpg"  width="100%" alt="Omohide Poro-Poro"></figure>
                                 </div>
                             <h3 class="title text-white">Omohide Poro-Poro</h3>
-                            </a>
+                            </a> 
                         </article>
                     </li>
                     <li class="col-6 col-sm-4 col-md-2 col-xl-4">

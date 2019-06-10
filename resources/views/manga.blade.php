@@ -17,7 +17,7 @@
             b sd b fb d bdv  n d b drjtyj   ddfggwrgsgw   wr g wg rwg w gw  wgw wgwg w g we
             g  g wh w w r gwg  wg wg wgwgwgwe g  s e jrj g t h   wr gw g w w vw g w w wrh w
             rw w b wrwrwn dndfn dn d t dgndn dn tt tht et h  hdf t dndferh r </p>
-            <div class='row'>
+            <div class='row'> 
               <div class='col-6'>
                 <a class="btn btn-dark" href="{{ url('/Compras')}}" role="button">Capitulos</a>
               </div>
