@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        
         return view('home');
+        echo asset('storage/file.txt');
     }
 }

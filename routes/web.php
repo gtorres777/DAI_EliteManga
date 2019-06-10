@@ -14,6 +14,14 @@
 
 Route::view('/principal','principal');
 
+Route::view('/usuario','usuario');
+
+Route::view('/anime','anime');
+
+Route::view('/productos','Productos');
+
+Route::view('/compras','Compras');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

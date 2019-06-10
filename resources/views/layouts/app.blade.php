@@ -18,34 +18,41 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   
+    <link href="{{ asset('css/extras.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="styleoff.css" class="">
+    <link rel="stylesheet" href="http://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css" class="">
+    <link href="metro-icons.css" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div id="app" >
+        <nav class=" navbar navbar-expand-md bg-white " >
+            <div class="container-fluid  row ">                
+                    <a class=" " href="{{ url('/principal') }}">
+                        <img src="/images/logo.png" alt="" width="100%"  class="col-3">
+                        </a>
+               
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     </ul>
-
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto ">
                         <!-- Authentication Links -->
+                        <div class="search dropdown ">
+                            <form action="/directorio" method="get" id="results" autocomplete="off" data-toggle="dropdown" class="">
+                                <span class="form-icon  mif-search mif-2x ">
+                                    <input class="form-control input" name="q" id="search-anime" type="search" placeholder="Buscar..." aria-label="Buscar..." >
+                                    
+                                </span>
+                            </form>
+                        </div>                        
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class=" title nav-link text-dark " href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="title nav-link text-dark" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -70,9 +77,8 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <main class="py-4">
+        </nav>     
+        <main>
             @yield('content')
         </main>
     </div>
