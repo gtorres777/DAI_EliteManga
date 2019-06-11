@@ -17,7 +17,7 @@ class CreateEntregasTable extends Migration
             $table->string('compra_id');
             $table->string('fecha_entrega');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
