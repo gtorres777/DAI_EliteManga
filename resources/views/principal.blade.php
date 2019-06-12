@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid between"  style="background-color: white">
+<div class="container between"  style="background-color: rgba(255,255,255,0.8)">
         
         <section>
             

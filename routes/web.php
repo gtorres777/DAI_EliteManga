@@ -26,7 +26,7 @@ Route::view('/manga','manga');
 
 Route::view('/seleccion','seleccion');
 
-Route::view('/tienda','tienda');
+Route::view('/tienda    ','tienda');
 
 Auth::routes();
 

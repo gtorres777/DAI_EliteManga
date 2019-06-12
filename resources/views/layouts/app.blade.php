@@ -29,7 +29,7 @@
         <nav class=" navbar navbar-expand-md" style="background-color:#232f3f" >
             <div class="container-fluid  row ">                
                     <a class=" " href="{{ url('/principal') }}">
-                        <img src="/images/logo.png" alt="" width="100%"  class="col-3">
+                        <img src="/images/logo1.png" alt="" width="100%"  class="col-3">
                         </a>
                
                     <!-- Left Side Of Navbar -->
