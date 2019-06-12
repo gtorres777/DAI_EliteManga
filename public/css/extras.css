@@ -107,8 +107,8 @@ body{
   }
 
   .colorh:hover{
-      background-color: rgba(72, 117, 184, 0.609);
-      color: rgb(0, 0, 0);
+      background-color:#232F3E;
+      color: rgb(6, 174, 252);
     
   }
   .texts{
@@ -141,6 +141,9 @@ body{
 }
   
 .fond{
-    background-color: #022042;    
+    background-color: #022042;
+
+
+    
 }
   
