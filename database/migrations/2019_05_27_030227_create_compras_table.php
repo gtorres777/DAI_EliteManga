@@ -17,7 +17,7 @@ class CreateComprasTable extends Migration
             $table->string('usuario_id');
             $table->string('fecha_compra');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
