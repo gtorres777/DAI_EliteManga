@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid between"  style="background-color:#00001a">
+<div class="container-fluid between"  style="background-color: white">
         
         <section>
             
             <div class="header py-4 ">
-                <h1 class="text-white"><span class="mif-cloudy4 mif-1x" style="color: darkRed;"> </span>  Ultimos Animes</h1>
+                <h1 class="text-black"><span class="mif-cloudy4 mif-1x" style="color: darkRed;"> </span>  Ultimos Animes</h1>
             </div>
             <div class="row">
-                <div class="col-12  col-sm-12 col-md-9   col-xl-9 card bg-transparent">
+                <div class="col-12  col-sm-12 col-md-9   col-xl-9  bg-transparent">
                     <ul class="list-unstyled row">
                         <li class="col-6 col-sm-6 col-md-4 col-xl-3">
                             <article class="anime">
@@ -100,35 +100,66 @@
                         <div class="">
                             <section>
                                 
-                                <h3 class="titulo text-white "> <span class="mif-folder mif-1x pr-2" style="color: darkRed;"> </span>Generos</h3>
+                                <h3 class="titulo text-black "> <span class="mif-folder mif-1x pr-2" style="color: darkRed;"> </span>Generos</h3>
                                     <div class="caja-scroll">
                                         <ul class="categories list-unstyled">
                                             <li>
-                                                <a href="/directorio?genero=accion" class="dropdown-item texts colorh">
+                                                <a href="/directorio?genero=accion" class="dropdown-item texts-black colorh">
                                                     <span class="mif-folder-open mif-1x pr-2" > </span>
                                                     Acción
                                                 </a>
                                             </li>
-                                            <li><a href="/directorio?genero=artes-marciales" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Artes Marciales</a></li>
-                                            <li><a href="/directorio?genero=aventura" class="dropdown-item  texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Aventuras</a></li>
-                                            <li><a href="/directorio?genero=carreras" class="dropdown-item  texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Carreras</a></li>
-                                            <li><a href="/directorio?genero=ciencia-ficcion" class="dropdown-item texts colorh" ><span class="mif-folder-open mif-1x pr-2" > </span>Ciencia Ficción</a></li>
-                                            <li><a href="/directorio?genero=comedia" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Comedia</a></li>
-                                            <li><a href="/directorio?genero=demencia" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Demencia</a></li>
-                                            <li><a href="/directorio?genero=demonios" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Demonios</a></li>
-                                            <li><a href="/directorio?genero=deportes" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Deportes</a></li>
-                                            <li><a href="/directorio?genero=drama" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Drama</a></li>
-                                            <li><a href="/directorio?genero=ecchi" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Ecchi</a></li>
-                                            <li><a href="/directorio?genero=escolares" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Escolares</a></li>
-                                            <li><a href="/directorio?genero=espacial" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Espacial</a></li>
-                                            <li><a href="/directorio?genero=fantasia" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Fantasía</a></li>
-                                            <li><a href="/directorio?genero=harem" class="dropdown-item texts colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Harem</a></li>
+                                            <li><a href="/directorio?genero=artes-marciales" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Artes Marciales</a></li>
+                                            <li><a href="/directorio?genero=aventura" class="dropdown-item  texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Aventuras</a></li>
+                                            <li><a href="/directorio?genero=carreras" class="dropdown-item  texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Carreras</a></li>
+                                            <li><a href="/directorio?genero=ciencia-ficcion" class="dropdown-item texts-black colorh" ><span class="mif-folder-open mif-1x pr-2" > </span>Ciencia Ficción</a></li>
+                                            <li><a href="/directorio?genero=comedia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Comedia</a></li>
+                                            <li><a href="/directorio?genero=demencia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Demencia</a></li>
+                                            <li><a href="/directorio?genero=demonios" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Demonios</a></li>
+                                            <li><a href="/directorio?genero=deportes" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Deportes</a></li>
+                                            <li><a href="/directorio?genero=drama" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Drama</a></li>
+                                            <li><a href="/directorio?genero=ecchi" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Ecchi</a></li>
+                                            <li><a href="/directorio?genero=escolares" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Escolares</a></li>
+                                            <li><a href="/directorio?genero=espacial" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Espacial</a></li>
+                                            <li><a href="/directorio?genero=fantasia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Fantasía</a></li>
+                                            <li><a href="/directorio?genero=harem" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Harem</a></li>
+                                        </ul>
+                                    </div>
+                            </section>
+                            <br>
+                            <section>
+                                
+                                <h3 class="titulo text-black "> <span class="mif-folder mif-1x pr-2" style="color: darkRed;"> </span>Recomendados</h3>
+                                    <div class="caja-scroll">
+                                        <ul class="categories list-unstyled">
+                                            <li>
+                                                <a href="/directorio?genero=accion" class="dropdown-item texts-black colorh">
+                                                    <span class="mif-folder-open mif-1x pr-2" > </span>
+                                                    Naruto
+                                                </a>
+                                            </li>
+                                            <li><a href="/directorio?genero=artes-marciales" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=aventura" class="dropdown-item  texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=carreras" class="dropdown-item  texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=ciencia-ficcion" class="dropdown-item texts-black colorh" ><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=comedia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=demencia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=demonios" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=deportes" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=drama" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=ecchi" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=escolares" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=espacial" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=fantasia" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
+                                            <li><a href="/directorio?genero=harem" class="dropdown-item texts-black colorh"><span class="mif-folder-open mif-1x pr-2" > </span>Naruto</a></li>
                                         </ul>
                                     </div>
                             </section>
                         </div>
                     </aside>
                 </div>
+
+            
             </div>
         </section>
     

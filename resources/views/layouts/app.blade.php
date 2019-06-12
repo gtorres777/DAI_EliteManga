@@ -26,7 +26,7 @@
 </head>
 <body>
     <div id="app" >
-        <nav class=" navbar navbar-expand-md bg-white " >
+        <nav class=" navbar navbar-expand-md" style="background-color:#232f3f" >
             <div class="container-fluid  row ">                
                     <a class=" " href="{{ url('/principal') }}">
                         <img src="/images/logo.png" alt="" width="100%"  class="col-3">
@@ -40,19 +40,19 @@
                         <!-- Authentication Links -->
                         <div class="search dropdown ">
                             <form action="/directorio" method="get" id="results" autocomplete="off" data-toggle="dropdown" class="">
-                                <span class="form-icon  mif-search mif-2x ">
-                                    <input class="form-control input" name="q" id="search-anime" type="search" placeholder="Buscar..." aria-label="Buscar..." >
+                                <span class="form-icon  mif-search mif-2x  ">
+                                    <input class="form-control input bg-white" name="q" id="search-anime" type="search" placeholder="Buscar..." aria-label="Buscar..." >
                                     
                                 </span>
                             </form>
                         </div>                        
                         @guest
                             <li class="nav-item">
-                                <a class=" title nav-link text-dark " href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class=" title nav-link text-white " href="{{ route('login') }}">{{ __('Inicio Sesión') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="title nav-link text-dark" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="title nav-link text-white" href="{{ route('register') }}">{{ __('Registro') }}</a>
                                 </li>
                             @endif
                         @else

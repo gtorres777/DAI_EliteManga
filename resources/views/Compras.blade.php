@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid between" style="width:100%; height:100%;">
+<div class="container between" style="width:100%; height:100%;">
         <section>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-xl-12">
@@ -10,7 +10,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-xl-12">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-6">
                         <li class="col-12 col-sm-12 col-md-12 col-xl-12  ">
                             <article class="anime">
                             <figure class="img-fluid ">
@@ -24,27 +24,27 @@
                     <div class="col-6 card ">
                         <div class="">
                             <ul class="list-unstyled row pt-4 ">
-                                <li class="col-12 col-sm-12 col-md-12 col-xl-3 ">
+                                <li class="col-3 col-sm-3 col-md-3 col-xl-3 ">
                               
                                             <img src="/images/imagen1.jpg" class="rounded img-fluid  bg-dark" width="100%" alt="Ai Shite Night ">
                                             
                                     </article>
                                 </li>
-                                <li class="col-12 col-sm-12 col-md-12 col-xl-3  ">
+                                <li class="col-3 col-sm-3 col-md-3 col-xl-3  ">
                                    
                                  
                                             <img src="/images/imagen2.jpg" class="rounded img-fluid  bg-dark" width="100%" alt="Ai Shite Night ">
                                         
                                   
                                 </li>
-                                <li class="col-12 col-sm-12 col-md-12 col-xl-3  ">
+                                <li class="col-3  col-sm-3 col-md-3 col-xl-3  ">
                               
 
                                             <img src="/images/imagen5.jpg" class="rounded img-fluid  bg-dark" width="100%" alt="Ai Shite Night ">
                                                 
                                     
                                 </li>
-                                <li class="col-12 col-sm-12 col-md-12 col-xl-3  ">
+                                <li class="col-3 col-sm-3 col-md-3 col-xl-3  ">
                                   
                                             <img src="/images/imagen4.jpg" class="rounded img-fluid  bg-dark" width="100%" alt="Ai Shite Night ">
                                             
@@ -55,11 +55,12 @@
                             <div class="col-12">
                                 <h4 class="">Ingrese tarjeta:</h4>
                             </div>
-                            
+                                <div class="col-12">
                                 <input type="text" class="form-control col-2 bg-white" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 <input type="text" class="form-control col-2 bg-white" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 <input type="text" class="form-control col-2 bg-white" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 <input type="text" class="form-control col-2 bg-white offset-md-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                </div>  
                                 <br>
                                 <br>
                                 <p class="py-4 pl-4 pr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium odit earum hic, dignissimos necessitatibus 
