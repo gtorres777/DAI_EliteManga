@@ -21,11 +21,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-   
-    <link href="{{ asset('css/extras.css') }}" rel="stylesheet">
-    
-    <link href="{{ asset('css/elfirme.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/intento3.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/extra1.css') }}" rel="stylesheet">
     
     <link rel="stylesheet" href="styleoff.css" class="">
     <link rel="stylesheet" href="http://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css" class="">
@@ -41,10 +38,10 @@
                                 <div class="col-6 col-sm-6 col-md-6 col-xl-6">
                                         <div class="search dropdown ">
                                             <form action="{{ action('MangaController@buscar')}}" method="GET" id="results" autocomplete="off" data-toggle="dropdown" class="">
-                                                <span class="form-icon  mif-search mif-2x ">
+                                                
                                                 <input class="form-control input col-12 col-sm-12 col-md-12 col-xl-12 bg-white" name="buscar"  type="search" placeholder="Buscar..." aria-label="Buscar..." >
                                                     
-                                                </span>
+                                            
                                             </form>
                                         </div>
                                 </div>
@@ -123,5 +120,25 @@
     @yield('scripts')
 
 </body>
+<div class="footbar" style="background-color:black">
+    <nav class="navbar navbar-expand-lg" style="background-color:black">
+        <figure class="navbar-brand logo"><img src="/images/logo(oscuro).png" alt="" width="100%"  class="col-3"></figure>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftnav" aria-controls="ftnav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <h4 style="color:white">2019 tiomanga.com</h4>
+        <div class="collapse navbar-collapse" id="ftnav" style="background-color:black">
+
+            <ul class="menu-ft navbar-nav mr-auto">
+            </ul>
+            <ul class="social-ft navbar-nav">
+                <li class="nav-item"><a class="nav-link fa-twitter fab" href="https://twitter.com/TioAnime5" rel="nofollow" target="_blank"></a></li>
+                <li class="nav-item"><a class="nav-link fa-facebook-f fab" href="https://www.facebook.com/tioanimeonline/" rel="nofollow" target="_blank"></a></li>
+                <li class="nav-item"><a class="nav-link fa-youtube fab" href="https://www.youtube.com/channel/UC71wO3noGfhEx8WBcy9emLw/" rel="nofollow" target="_blank"></a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+</div>
 
 </html>
