@@ -222,13 +222,16 @@
                                                 
                                                 
                                                     
-                                                <li>
-                                                    <a href="{{ action('MangaController@show', $key) }}" class="dropdown-item tamaños colorh">
+                                                <li class="">
+                                                <a class="dropdown-item">
+                                                    <a href="{{ action('MangaController@show', $key) }}" class=" tamaños colorh col-6">
                                                      {{ $valor }}
                                                     </a>
-                                                    <a href="{{action('MangaController@eliminarFavoritos', $key)}}" class="btn btn-primary">
+                                                    <a href="{{action('MangaController@eliminarFavoritos', $key)}}" class="quitar btn btn-transparent text-danger col-3">
                                                      Quitar
                                                     </a>
+                                            </a> 
+                                                
                                                 </li>
 
                                                 @endforeach
@@ -257,13 +260,13 @@
                 
                 @foreach($pedidos as $pedido)
                 <ul class="list-unstyled pl-5">
-                    <li>pedido</li>
+                    <li style="font-weight: bold;">Pedido</li>
                     <li>Fecha de entrega: {{$pedido->fecha_entrega['date']}} </li>
                     <li>Fecha de compra: {{$pedido->fecha_compra['date']}}</li>
                 </ul>
                              
-                <table class="table table-stripped table-hover table-bordered table-dark">
-                    <thead>
+                <table class="table table-stripped table-hover table-bordered table-striped ml-3 mr-3">
+                    <thead class="thead-dark">
                         <tr>
                             <th>Producto</th>
                             <th>Precio</th>
@@ -287,6 +290,8 @@
                 @endforeach
                         </tbody>
                 </table>
+                <br>
+                
                 @endforeach  
 
                 
