@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid "  style="background-color:white">
+<div class="container-fluid "  style="background-color:rgba(255,255,255,0.8)">
   <section>
   <div class="container py-4">
-<div class="row">
-<aside class="col-12 col-sm-4 col-lg-3 col-xl-4">
-<div class="thumb">
-<img src="{{ asset('images/' . $manga->imgManga) }}" class="rounded" width="80%" alt="Omohide Poro-Poro" height="80%">
+<div class="row ">
+<aside class="col-12 col-sm-4 col-lg-3 col-xl-4 ">
+<div class="">
+<img src="{{ asset('images/' . $manga->imgManga) }}" class="rounded" width="100%" alt="Omohide Poro-Poro" height="100%">
 </div>
 </aside>
 <aside class="col-12 col-sm-8 col-lg-9 col-xl-8">
@@ -26,7 +26,7 @@
       <div class="col-12 col-sm-12 col-md-12 col-xl-12 py-5 " style="min-height:100% " >
             <section>
               <h3 class="titulo text-dark ">Capitulos</h3>
-                  <div class="caja-scroll">
+                  <div class="caja-scroll fondocs ">
                     <ul class="categories list-unstyled">
                          @foreach ($manga->capitulos as $capitulo)
                         

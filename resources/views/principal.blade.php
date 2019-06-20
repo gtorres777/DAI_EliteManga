@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid between"  style="background-color:rgba(0,0,0,0.7)"> 
+<div class="container-fluid between fondox"> 
         <section>
             <div class="header py-4 ">
                 @if(isset($nombre))
@@ -11,23 +11,28 @@
                 @endif
             </div>
             <div class="row">
-                <div class="col-12  col-sm-12 col-md-9   col-xl-9 card bg-transparent">
+                <div class="col-12  col-sm-12 col-md-9   col-xl-9 ">
                     <ul class="list-unstyled row">
                     @foreach($mangas as $manga)
-                        <li class="col-6 col-sm-6 col-md-4 col-xl-3">
+                        <li class="col-6 col-sm-6 col-md-4 col-xl-3  bg-transparent">
+                        <br>
                             <article class="anime" id="{{ $manga->id }}">
-                                <a href="{{ action('MangaController@show', $manga->id) }}">
-                                    <div class="thumb">
-                                        <figure class=" img-fluid "><img src="{{ asset('images/' . $manga->imgManga) }}" class="rounded" width="100%" alt="Omohide Poro-Poro" height="337px"></figure>
+                                <a href="{{ action('MangaController@show', $manga->id) }}" class="title3 title4">
+                                    <div class="thumb ">
+                                  
+                                      <img src="{{ asset('images/' . $manga->imgManga) }}" class="imagenmanga" alt="Omohide Poro-Poro" height="300px" >
                                     </div>
-                                    <h2 class="text-dark">{{ $manga->nombre_manga }}</h2>
+                                    <h2 class="title2 pt-2 pl-1">{{ $manga->nombre_manga }}</h2>
                                 </a>
                             </article>
-                            <a class="btn btn-success" href="{{ action('MangaController@agregar', [$manga->id, $manga->nombre_manga])}}" role="button">Añadir a favoritos</a>
-                            <div>
+                            <a class="btn btn-success" href="{{ action('MangaController@agregar', [$manga->id, $manga->nombre_manga])}}" role="button"><span class="mif-heart"></span></a>
+                        
                             <br>
                             <br>
                         </li>
+                      
+
+                        
                         @endforeach
                     </ul>
                 </div>
@@ -63,7 +68,7 @@
                                             @foreach($mangas as $manga)
                                                @if ( (strval(date('d-m-Y'))) == (date('d-m-Y', strtotime($manga->created_at))) ) 
                                             <li>
-                                                <a href="{{ action('MangaController@show', $manga->id) }}" class="dropdown-item texts colorh">
+                                                <a href="{{ action('MangaController@show', $manga->id) }}" class="dropdown-item texts colorh" >
                                                     <span class="mif-folder-open mif-1x pr-2" > </span>{{ $manga->nombre_manga }}
                                                 </a>
                                             </li>
