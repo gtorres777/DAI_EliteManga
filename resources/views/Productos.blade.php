@@ -1,31 +1,37 @@
 @extends('layouts.app')
 @section('content')
-
-<div class="container-fluid between"  style="background-color:#00001a">
+<div class="container-fluid between"  style="background-color:white">
         <section>
         <div class="py-1"></div>
-                <div class="header my-4 fluid" style="background-color:#0d1a26">
-                    <h2 class="title row justify-content-center mt-3" style="color:white" >Productos de {{ $nombre }}</h2>
+                <div class="header my-4 fluid row justify-content-center" style="background-color:black">
+                    <h1 class="productos" style="color:white" >Productos de {{ $nombre }}</h1>
                 </div>
             <div class="row">
               <div class="col-12">
                 <ul class="list-unstyled row">
-                    @foreach($mangas as $manga)
-                    <li class="col-6 col-sm-4 col-md-2 col-xl-4">
+                @foreach($mangas as $manga)
+                    <li class="col-6 col-sm-4 col-md-2 col-xl-3 pt-4">
                         <article class="anime">
                             <a href="{{ action('ProductoController@show', $manga->id) }}">
-                                <div class="thumb">
-                                    <figure class="fa-play-circle img-fluid"><img src="{{ asset('productos/' . $manga->imgProducto) }}"  width="100%" alt="Omohide Poro-Poro"></figure>
-                                </div>
-                            <h3 class="title text-white">{{ $manga->nombre_producto }}</h3>
-                            </a> 
+                                <div class="overlayinn-border">
+                                    <figure class="img-fluid "><img class="imagen" alt="overlay" src="{{ asset('productos/' . $manga->imgProducto) }}"  width="100%" height="337px" ></figure>
+                                </div> 
+                                <h3 class="title text-dark">{{ $manga->nombre_producto }}</h3>
+                                
+                            
+                            </a>
                         </article>
+                        <a class="btn btn-success" href="{{ action('CarritoController@agregar', $manga->id)}}" role="button">Añadir al carrito</a>
                     </li>
-                    @endforeach
+                    @endforeach  
                 </ul>
                 </div>
+               
+
                 </section>
                 </div>
                 <nav aria-label="Page navigation example">
+  
+
 </div>
 @endsection
